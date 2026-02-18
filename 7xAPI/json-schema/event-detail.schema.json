@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "title", "type", "dayRef", "venueRef", "startTime", "endTime", "performerIds", "description"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "type": { "type": "string", "enum": ["concert", "dj-set", "workshop", "talk", "performance", "other"] },
+    "dayRef": { "type": "string" },
+    "venueRef": { "type": "string" },
+    "startTime": { "type": "string", "format": "date-time" },
+    "endTime": { "type": "string", "format": "date-time" },
+    "performerIds": { "type": "array", "items": { "type": "string" } },
+    "description": { "type": "string" }
+  }
+}

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <!-- Vlastní omezení: pattern pro české PSČ (5 číslic) -->
+  <xs:simpleType name="postalCodeType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Vlastní omezení: enum pro typ místa/scény -->
+  <xs:simpleType name="venueTypeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="open-air"/>
+      <xs:enumeration value="indoor"/>
+      <xs:enumeration value="workshop"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Vlastní omezení: enum pro typ programové položky -->
+  <xs:simpleType name="eventTypeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="concert"/>
+      <xs:enumeration value="dj-set"/>
+      <xs:enumeration value="workshop"/>
+      <xs:enumeration value="talk"/>
+      <xs:enumeration value="performance"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Vlastní omezení: datum ve formátu YYYY-MM-DD -->
+  <xs:simpleType name="dateType">
+    <xs:restriction base="xs:date"/>
+  </xs:simpleType>
+
+  <!-- Vlastní omezení: datetime ve formátu ISO 8601 -->
+  <xs:simpleType name="dateTimeType">
+    <xs:restriction base="xs:dateTime"/>
+  </xs:simpleType>
+
+  <!-- Vlastní omezení: rozsah ročníku 1–99 -->
+  <xs:simpleType name="editionType">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="99"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Vlastní omezení: měna (ISO 4217, 2–3 znaky) -->
+  <xs:simpleType name="currencyType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]{2,3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idType">
+    <xs:restriction base="xs:ID"/>
+  </xs:simpleType>
+
+  <xs:attribute name="id" type="xs:ID"/>
+
+  <xs:element name="festival">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="identity" type="identityType"/>
+        <xs:element name="venues" type="venuesType"/>
+        <xs:element name="days" type="daysType"/>
+        <xs:element name="performers" type="performersType"/>
+        <xs:element name="events" type="eventsType"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="identityType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="edition" type="editionType"/>
+      <xs:element name="location" type="xs:string"/>
+      <xs:element name="dateRange">
+        <xs:complexType>
+          <xs:attribute name="from" type="dateType" use="required"/>
+          <xs:attribute name="to" type="dateType" use="required"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="website" type="xs:anyURI"/>
+      <xs:element name="tickets" type="ticketsType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ticketsType">
+    <xs:sequence>
+      <xs:element name="ticketType" type="ticketType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ticketType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="price">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:decimal">
+              <xs:attribute name="currency" type="currencyType" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="venuesType">
+    <xs:sequence>
+      <xs:element name="venue" type="venueType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="venueType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="type" type="venueTypeType"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="address" type="addressType"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="addressType">
+    <xs:sequence>
+      <xs:element name="street" type="xs:string"/>
+      <xs:element name="city" type="xs:string"/>
+      <xs:element name="postalCode" type="postalCodeType"/>
+      <xs:element name="country" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="daysType">
+    <xs:sequence>
+      <xs:element name="day" type="dayType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dayType">
+    <xs:sequence>
+      <xs:element name="label" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+    <xs:attribute name="date" type="dateType" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="performersType">
+    <xs:sequence>
+      <xs:element name="performer" type="performerType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="performerType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="genre" type="xs:string"/>
+      <xs:element name="country" type="xs:string"/>
+      <xs:element name="shortBio" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="eventsType">
+    <xs:sequence>
+      <xs:element name="event" type="eventType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eventType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="type" type="eventTypeType"/>
+      <xs:element name="dayRef" type="xs:IDREF"/>
+      <xs:element name="venueRef" type="xs:IDREF"/>
+      <xs:element name="startTime" type="dateTimeType"/>
+      <xs:element name="endTime" type="dateTimeType"/>
+      <xs:element name="performerRefs">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="performerRef" type="xs:IDREF" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="description" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Praktické informace | Prague Soundscapes Festival 2026</title>
+  <meta name="description" content="Místa konání, doprava, parkování, ubytování a vstupenky pro Prague Soundscapes Festival 2026.">
+  <meta property="og:title" content="Praktické informace | Prague Soundscapes Festival 2026">
+  <meta property="og:description" content="Kde festival probíhá, jak se dostat, ubytování a vstupenky.">
+  <meta property="og:image" content="https://picsum.photos/1200/630">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Prague Soundscapes Festival</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Úvod</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="ucinkujici.html">Účinkující</a></li>
+        <li><a href="prakticke-informace.html">Praktické informace</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Praktické informace</h1>
+      <p>Data o místech odpovídají API <code>GET /api/venues</code> a <code>GET /api/venues/{id}</code>.</p>
+    </section>
+    <section>
+      <h2>Místa konání (scény)</h2>
+      <article class="venue-card">
+        <h3>River Stage</h3>
+        <p>Hlavní open-air stage u řeky s kapacitou cca 3000 lidí.</p>
+        <address>
+          Náplavka Rašínovo nábřeží<br>
+          120 00 Praha<br>
+          Česko
+        </address>
+        <p>Doprava: MHD – tramvaj, zastávka v blízkosti nábřeží.</p>
+      </article>
+      <article class="venue-card">
+        <h3>Factory Hall</h3>
+        <p>Průmyslový vnitřní prostor pro večerní klubový program.</p>
+        <address>
+          Staroprůmyslová 12<br>
+          130 00 Praha<br>
+          Česko
+        </address>
+      </article>
+      <article class="venue-card">
+        <h3>Workshop Loft</h3>
+        <p>Menší loft pro denní workshopy a talks.</p>
+        <address>
+          Kreativní 5<br>
+          130 00 Praha<br>
+          Česko
+        </address>
+      </article>
+    </section>
+    <section>
+      <h2>Vstupenky a otevírací doba</h2>
+      <p>Vstupenky lze zakoupit online. Typy: Full festival pass, Day pass, Talks &amp; Workshops pass. Otevírací doba areálu dle programu jednotlivých dnů.</p>
+    </section>
+    <section>
+      <h2>Doprava a parkování</h2>
+      <ul>
+        <li>MHD: Doporučujeme veřejnou dopravu. Zastávky v blízkosti jednotlivých scén.</li>
+        <li>Parkování: Limitované; doporučujeme P+R a MHD.</li>
+      </ul>
+    </section>
+    <aside>
+      <p>Kompletní adresy a popisy míst jsou k dispozici v <code>data/festival.xml</code> a přes API endpointy pro venues.</p>
+    </aside>
+  </main>
+  <footer>
+    <p>Prague Soundscapes Festival · Kontakt: info@example.com</p>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

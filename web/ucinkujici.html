@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Účinkující | Prague Soundscapes Festival 2026</title>
+  <meta name="description" content="Seznam účinkujících Prague Soundscapes Festival 2026 – interpreti, DJové, workshopy a talky.">
+  <meta property="og:title" content="Účinkující | Prague Soundscapes Festival 2026">
+  <meta property="og:description" content="Seznam všech účinkujících festivalu s popisem a žánrem.">
+  <meta property="og:image" content="https://picsum.photos/1200/630">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Prague Soundscapes Festival</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Úvod</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="ucinkujici.html">Účinkující</a></li>
+        <li><a href="prakticke-informace.html">Praktické informace</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Účinkující</h1>
+      <p>Seznam účinkujících odpovídá datům z API (<code>GET /api/performers</code>, <code>GET /api/performers/{id}</code>). Stránkování: <code>page</code>, <code>pageSize</code>.</p>
+    </section>
+    <section>
+      <h2>Hudební interpreti a projekty</h2>
+      <div class="performer-list">
+        <article id="p1">
+          <h3><a href="ucinkujici-detail.html?id=p1">Echo Lines</a></h3>
+          <p><strong>Žánr:</strong> electronic · <strong>Země:</strong> CZ</p>
+          <p>Pražský elektronický projekt míchající ambient a klubový zvuk.</p>
+          <p><a href="ucinkujici-detail.html?id=p1">Detail</a> · <a href="program.html">Program</a></p>
+        </article>
+        <article id="p2">
+          <h3><a href="ucinkujici-detail.html?id=p2">Midnight Signals</a></h3>
+          <p><strong>Žánr:</strong> indie-pop · <strong>Země:</strong> CZ</p>
+          <p>Melodický indie-pop s důrazem na vokály a synthy.</p>
+          <p><a href="ucinkujici-detail.html?id=p2">Detail</a> · <a href="program.html">Program</a></p>
+        </article>
+        <article id="p8">
+          <h3><a href="ucinkujici-detail.html?id=p8">Polarity</a></h3>
+          <p><strong>Žánr:</strong> ambient · <strong>Země:</strong> CZ</p>
+          <p>Ambientní projekt pro pozdní noční poslech.</p>
+          <p><a href="ucinkujici-detail.html?id=p8">Detail</a> · <a href="program.html">Program</a></p>
+        </article>
+      </div>
+    </section>
+    <section>
+      <h2>Workshopy a talky</h2>
+      <ul>
+        <li>Echo Workshop – sound design a mix</li>
+        <li>Creative Coding Lab – audiovizuální programování</li>
+        <li>Music Business Panel – hudební průmysl</li>
+        <li>Women in Sound – diskuse a mentoring</li>
+      </ul>
+    </section>
+    <aside>
+      <p>Detail konkrétního účinkujícího vrací <code>GET /api/performers/{id}</code>. Na této stránce jsou vybraní účinkující; kompletní data jsou v <code>7xAPI/json/performers.json</code>.</p>
+    </aside>
+  </main>
+  <footer>
+    <p>Prague Soundscapes Festival · Kontakt: info@example.com</p>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

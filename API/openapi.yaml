@@ -1,0 +1,385 @@
+openapi: 3.1.0
+info:
+  title: Prague Soundscapes Festival API
+  description: REST API pro data festivalu – identita, místa, účinkující, program.
+  version: 1.0.0
+
+servers:
+  - url: https://example.com/api
+    description: Produkční API
+
+paths:
+  /festival:
+    get:
+      summary: Identita festivalu
+      operationId: getFestival
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Festival'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /venues:
+    get:
+      summary: Seznam míst/scén
+      operationId: getVenues
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VenuesList'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /venues/{id}:
+    get:
+      summary: Detail místa
+      operationId: getVenueById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            example: v1
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Venue'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Místo nenalezeno
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /performers:
+    get:
+      summary: Seznam účinkujících
+      operationId: getPerformers
+      parameters:
+        - name: page
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: pageSize
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PerformersList'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /performers/{id}:
+    get:
+      summary: Detail účinkujícího
+      operationId: getPerformerById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            example: p1
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Performer'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Účinkující nenalezen
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /events:
+    get:
+      summary: Seznam programových položek
+      operationId: getEvents
+      parameters:
+        - name: day
+          in: query
+          description: Filtr podle data (YYYY-MM-DD)
+          schema:
+            type: string
+            format: date
+            example: "2026-06-19"
+        - name: venueId
+          in: query
+          description: Filtr podle ID místa
+          schema:
+            type: string
+            example: v1
+        - name: performerId
+          in: query
+          description: Filtr podle ID účinkujícího
+          schema:
+            type: string
+            example: p1
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventsList'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /events/{id}:
+    get:
+      summary: Detail programové položky
+      operationId: getEventById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            example: e1
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Event'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Event nenalezen
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+        code:
+          type: integer
+          example: 404
+    Festival:
+      type: object
+      required: [id, name, edition, location, dateFrom, dateTo, description, website, tickets]
+      properties:
+        id:
+          type: string
+          example: prague-soundscapes-2026
+        name:
+          type: string
+        edition:
+          type: integer
+        location:
+          type: string
+        dateFrom:
+          type: string
+          format: date
+        dateTo:
+          type: string
+          format: date
+        description:
+          type: string
+        website:
+          type: string
+          format: uri
+        tickets:
+          type: array
+          items:
+            $ref: '#/components/schemas/TicketType'
+    TicketType:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+        currency:
+          type: string
+    Venue:
+      type: object
+      required: [id, name, type, description, address]
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        type:
+          type: string
+          enum: [open-air, indoor, workshop]
+        description:
+          type: string
+        address:
+          $ref: '#/components/schemas/Address'
+    Address:
+      type: object
+      properties:
+        street:
+          type: string
+        city:
+          type: string
+        postalCode:
+          type: string
+        country:
+          type: string
+    VenuesList:
+      type: object
+      required: [venues]
+      properties:
+        venues:
+          type: array
+          items:
+            $ref: '#/components/schemas/Venue'
+    Performer:
+      type: object
+      required: [id, name, genre, country, shortBio]
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        genre:
+          type: string
+        country:
+          type: string
+        shortBio:
+          type: string
+    PerformersList:
+      type: object
+      required: [performers]
+      properties:
+        performers:
+          type: array
+          items:
+            $ref: '#/components/schemas/Performer'
+        pagination:
+          type: object
+          properties:
+            page:
+              type: integer
+            pageSize:
+              type: integer
+            total:
+              type: integer
+    Event:
+      type: object
+      required: [id, title, type, dayRef, venueRef, startTime, endTime, performerIds, description]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        type:
+          type: string
+          enum: [concert, dj-set, workshop, talk, performance, other]
+        dayRef:
+          type: string
+        venueRef:
+          type: string
+        startTime:
+          type: string
+          format: date-time
+        endTime:
+          type: string
+          format: date-time
+        performerIds:
+          type: array
+          items:
+            type: string
+        description:
+          type: string
+    EventsList:
+      type: object
+      required: [events]
+      properties:
+        events:
+          type: array
+          items:
+            $ref: '#/components/schemas/Event'

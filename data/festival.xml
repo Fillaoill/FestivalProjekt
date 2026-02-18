@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<festival id="prague-soundscapes-2026">
+  <identity>
+    <name>Prague Soundscapes Festival</name>
+    <edition>1</edition>
+    <location>Praha</location>
+    <dateRange from="2026-06-19" to="2026-06-21"/>
+    <description>
+      Prague Soundscapes Festival je třídenní multi-žánrový hudební a talk/workshop festival v Praze,
+      zaměřený na elektroniku, alternativní pop, experimentální projekty a kreativní technologie.
+    </description>
+    <website>https://example.com/prague-soundscapes</website>
+    <tickets>
+      <ticketType id="full-pass">
+        <name>Full festival pass</name>
+        <description>Vstup na všechny dny a scény.</description>
+        <price currency="CZK">2490</price>
+      </ticketType>
+      <ticketType id="day-pass">
+        <name>Day pass</name>
+        <description>Vstup na vybraný festivalový den.</description>
+        <price currency="CZK">1190</price>
+      </ticketType>
+      <ticketType id="talks-pass">
+        <name>Talks &amp; Workshops pass</name>
+        <description>Vstup pouze na denní talks a workshopy.</description>
+        <price currency="CZK">790</price>
+      </ticketType>
+    </tickets>
+  </identity>
+
+  <venues>
+    <venue id="v1">
+      <name>River Stage</name>
+      <type>open-air</type>
+      <description>Hlavní open-air stage u řeky s kapacitou cca 3000 lidí.</description>
+      <address>
+        <street>Náplavka Rašínovo nábřeží</street>
+        <city>Praha</city>
+        <postalCode>12000</postalCode>
+        <country>CZ</country>
+      </address>
+    </venue>
+    <venue id="v2">
+      <name>Factory Hall</name>
+      <type>indoor</type>
+      <description>Průmyslový vnitřní prostor pro večerní klubový program.</description>
+      <address>
+        <street>Staroprůmyslová 12</street>
+        <city>Praha</city>
+        <postalCode>13000</postalCode>
+        <country>CZ</country>
+      </address>
+    </venue>
+    <venue id="v3">
+      <name>Workshop Loft</name>
+      <type>workshop</type>
+      <description>Menší loft pro denní workshopy a talks.</description>
+      <address>
+        <street>Kreativní 5</street>
+        <city>Praha</city>
+        <postalCode>13000</postalCode>
+        <country>CZ</country>
+      </address>
+    </venue>
+  </venues>
+
+  <days>
+    <day id="d1" date="2026-06-19">
+      <label>Pátek</label>
+    </day>
+    <day id="d2" date="2026-06-20">
+      <label>Sobota</label>
+    </day>
+    <day id="d3" date="2026-06-21">
+      <label>Neděle</label>
+    </day>
+  </days>
+
+  <performers>
+    <!-- 60 performers, p1–p60 -->
+    <performer id="p1">
+      <name>Echo Lines</name>
+      <genre>electronic</genre>
+      <country>CZ</country>
+      <shortBio>Pražský elektronický projekt míchající ambient a klubový zvuk.</shortBio>
+    </performer>
+    <performer id="p2">
+      <name>Midnight Signals</name>
+      <genre>indie-pop</genre>
+      <country>CZ</country>
+      <shortBio>Melodický indie-pop s důrazem na vokály a synthy.</shortBio>
+    </performer>
+    <performer id="p3">
+      <name>Neon Circuits</name>
+      <genre>synthwave</genre>
+      <country>SK</country>
+      <shortBio>Synthwave duo s vizuálně silnou light show.</shortBio>
+    </performer>
+    <performer id="p4">
+      <name>Urban Echoes</name>
+      <genre>alternative</genre>
+      <country>CZ</country>
+      <shortBio>Alternativní kapela propojující kytary a elektroniku.</shortBio>
+    </performer>
+    <performer id="p5">
+      <name>Soft Glitch</name>
+      <genre>experimental</genre>
+      <country>PL</country>
+      <shortBio>Experimentální live set pracující s chybami a šumem.</shortBio>
+    </performer>
+    <performer id="p6">
+      <name>Waveforms Collective</name>
+      <genre>electronic</genre>
+      <country>DE</country>
+      <shortBio>Mezinárodní DJ kolektiv zaměřený na deep a dub techno.</shortBio>
+    </performer>
+    <performer id="p7">
+      <name>Golden Hours</name>
+      <genre>indie-rock</genre>
+      <country>CZ</country>
+      <shortBio>Indie-rocková kapela s melancholickými texty.</shortBio>
+    </performer>
+    <performer id="p8">
+      <name>Polarity</name>
+      <genre>ambient</genre>
+      <country>CZ</country>
+      <shortBio>Ambientní projekt pro pozdní noční poslech.</shortBio>
+    </performer>
+    <performer id="p9">
+      <name>Glitch Garden</name>
+      <genre>electronic</genre>
+      <country>CZ</country>
+      <shortBio>Hudební kolektiv s audiovizuálními performancemi.</shortBio>
+    </performer>
+    <performer id="p10">
+      <name>Night Transit</name>
+      <genre>techno</genre>
+      <country>DE</country>
+      <shortBio>Techno DJ známý pro dlouhé, pozvolna gradující sety.</shortBio>
+    </performer>
+    <performer id="p11">
+      <name>Quiet City</name>
+      <genre>downtempo</genre>
+      <country>CZ</country>
+      <shortBio>Downtempo trio s důrazem na akustické nástroje.</shortBio>
+    </performer>
+    <performer id="p12">
+      <name>Signal Drift</name>
+      <genre>drum&amp;bass</genre>
+      <country>CZ</country>
+      <shortBio>Drum&amp;bass DJ zaměřený na liquid a deep.</shortBio>
+    </performer>
+    <performer id="p13">
+      <name>Hidden Patterns</name>
+      <genre>minimal</genre>
+      <country>RO</country>
+      <shortBio>Minimal techno duo z Bukurešti.</shortBio>
+    </performer>
+    <performer id="p14">
+      <name>Cloud Atlas</name>
+      <genre>post-rock</genre>
+      <country>CZ</country>
+      <shortBio>Instrumentální post-rock s projekcemi.</shortBio>
+    </performer>
+    <performer id="p15">
+      <name>Neon Rivers</name>
+      <genre>indie-pop</genre>
+      <country>AT</country>
+      <shortBio>Indie-pop s elektronickými beaty.</shortBio>
+    </performer>
+    <performer id="p16">
+      <name>City Lights Ensemble</name>
+      <genre>jazz-electronic</genre>
+      <country>CZ</country>
+      <shortBio>Fúze jazzu a elektroniky.</shortBio>
+    </performer>
+    <performer id="p17">
+      <name>Parallel Lines</name>
+      <genre>electronic</genre>
+      <country>CZ</country>
+      <shortBio>Live set kombinující moduly a drum machine.</shortBio>
+    </performer>
+    <performer id="p18">
+      <name>Mono Lake</name>
+      <genre>ambient-techno</genre>
+      <country>DE</country>
+      <shortBio>Atmosférický ambient techno projekt.</shortBio>
+    </performer>
+    <performer id="p19">
+      <name>Crystal Fields</name>
+      <genre>electro-pop</genre>
+      <country>CZ</country>
+      <shortBio>Electro-pop s výrazným vokálem.</shortBio>
+    </performer>
+    <performer id="p20">
+      <name>Frameshift</name>
+      <genre>idm</genre>
+      <country>UK</country>
+      <shortBio>IDM producent s komplexními rytmy.</shortBio>
+    </performer>
+    <performer id="p21">
+      <name>Echo Workshop</name>
+      <genre>talk</genre>
+      <country>CZ</country>
+      <shortBio>Workshopy o sound designu a mixu.</shortBio>
+    </performer>
+    <performer id="p22">
+      <name>Creative Coding Lab</name>
+      <genre>talk</genre>
+      <country>CZ</country>
+      <shortBio>Workshop o audiovizuálním programování.</shortBio>
+    </performer>
+    <performer id="p23">
+      <name>Music Business Panel</name>
+      <genre>talk</genre>
+      <country>CZ</country>
+      <shortBio>Panelová diskuse o hudebním průmyslu.</shortBio>
+    </performer>
+    <performer id="p24">
+      <name>Women in Sound</name>
+      <genre>talk</genre>
+      <country>CZ</country>
+      <shortBio>Diskuse o zastoupení žen v audio profesích.</shortBio>
+    </performer>
+    <performer id="p25">
+      <name>Field Recording Walk</name>
+      <genre>workshop</genre>
+      <country>CZ</country>
+      <shortBio>Workshop zaměřený na nahrávání městského zvuku.</shortBio>
+    </performer>
+    <performer id="p26">
+      <name>Live Coding Session</name>
+      <genre>performance</genre>
+      <country>CZ</country>
+      <shortBio>Ukázka live coding performance.</shortBio>
+    </performer>
+    <performer id="p27">
+      <name>Analog Heaven</name>
+      <genre>workshop</genre>
+      <country>CZ</country>
+      <shortBio>Workshop o analogových syntezátorech.</shortBio>
+    </performer>
+    <performer id="p28">
+      <name>Lighting Design Talk</name>
+      <genre>talk</genre>
+      <country>CZ</country>
+      <shortBio>Přednáška o světelném designu pro koncerty.</shortBio>
+    </performer>
+    <performer id="p29">
+      <name>Festival Production 101</name>
+      <genre>talk</genre>
+      <country>CZ</country>
+      <shortBio>Jak se organizuje středně velký festival.</shortBio>
+    </performer>
+    <performer id="p30">
+      <name>Podcast Live Recording</name>
+      <genre>talk</genre>
+      <country>CZ</country>
+      <shortBio>Živé nahrávání hudebního podcastu.</shortBio>
+    </performer>
+    <performer id="p31">
+      <name>Bright Signals</name>
+      <genre>indie-pop</genre>
+      <country>CZ</country>
+      <shortBio>Čerstvý projekt s chytlavými melodiemi.</shortBio>
+    </performer>
+    <performer id="p32">
+      <name>Night Bloom</name>
+      <genre>dream-pop</genre>
+      <country>CZ</country>
+      <shortBio>Dream-pop s éterickým vokálem.</shortBio>
+    </performer>
+    <performer id="p33">
+      <name>Static Phase</name>
+      <genre>electronic</genre>
+      <country>CZ</country>
+      <shortBio>Elektronika s prvky noise a glitch.</shortBio>
+    </performer>
+    <performer id="p34">
+      <name>Soft Gravity</name>
+      <genre>ambient</genre>
+      <country>CZ</country>
+      <shortBio>Ambientní live act pro pozdní noc.</shortBio>
+    </performer>
+    <performer id="p35">
+      <name>Metro Lines</name>
+      <genre>house</genre>
+      <country>CZ</country>
+      <shortBio>House DJ se zaměřením na deep a soulful.</shortBio>
+    </performer>
+    <performer id="p36">
+      <name>Outer Shell</name>
+      <genre>techno</genre>
+      <country>CZ</country>
+      <shortBio>Tvrdší techno pro pozdní ranní hodiny.</shortBio>
+    </performer>
+    <performer id="p37">
+      <name>City Reflections</name>
+      <genre>electronic</genre>
+      <country>CZ</country>
+      <shortBio>Elektronický projekt inspirovaný městskými rytmy.</shortBio>
+    </performer>
+    <performer id="p38">
+      <name>Hidden Lake</name>
+      <genre>indie-folk</genre>
+      <country>CZ</country>
+      <shortBio>Indie-folk s elektronickými prvky.</shortBio>
+    </performer>
+    <performer id="p39">
+      <name>VJ Spectrum</name>
+      <genre>vj</genre>
+      <country>CZ</country>
+      <shortBio>VJ kolektiv zajišťující vizuály pro hlavní stage.</shortBio>
+    </performer>
+    <performer id="p40">
+      <name>Neon Bridges</name>
+      <genre>electro-pop</genre>
+      <country>CZ</country>
+      <shortBio>Electro-pop pro večerní hlavní slot.</shortBio>
+    </performer>
+    <performer id="p41">
+      <name>Low Tide</name>
+      <genre>downtempo</genre>
+      <country>CZ</country>
+      <shortBio>Downtempo duo vhodné na západ slunce.</shortBio>
+    </performer>
+    <performer id="p42">
+      <name>Granite</name>
+      <genre>post-metal</genre>
+      <country>CZ</country>
+      <shortBio>Post-metalová kapela pro temnější část večera.</shortBio>
+    </performer>
+    <performer id="p43">
+      <name>Soft Focus</name>
+      <genre>lofi</genre>
+      <country>CZ</country>
+      <shortBio>Lofi beats pro odpočinkovou zónu.</shortBio>
+    </performer>
+    <performer id="p44">
+      <name>Inner Motion</name>
+      <genre>electronic</genre>
+      <country>CZ</country>
+      <shortBio>Elektronika s prvky R&amp;B.</shortBio>
+    </performer>
+    <performer id="p45">
+      <name>Night Drive</name>
+      <genre>synth-pop</genre>
+      <country>CZ</country>
+      <shortBio>Synth-pop inspirovaný 80. lety.</shortBio>
+    </performer>
+    <performer id="p46">
+      <name>City Noise</name>
+      <genre>noise</genre>
+      <country>CZ</country>
+      <shortBio>Hluchý, experimentální noise set.</shortBio>
+    </performer>
+    <performer id="p47">
+      <name>Open Circuits</name>
+      <genre>live-electronics</genre>
+      <country>CZ</country>
+      <shortBio>Live electronics performance s moduláry.</shortBio>
+    </performer>
+    <performer id="p48">
+      <name>Parallel Dreams</name>
+      <genre>dream-pop</genre>
+      <country>CZ</country>
+      <shortBio>Dream-pop s atmosférickými kytarami.</shortBio>
+    </performer>
+    <performer id="p49">
+      <name>Night Figures</name>
+      <genre>indie-rock</genre>
+      <country>CZ</country>
+      <shortBio>Indie-rocková kapela s energickým vystoupením.</shortBio>
+    </performer>
+    <performer id="p50">
+      <name>Echo Streets</name>
+      <genre>electronic</genre>
+      <country>CZ</country>
+      <shortBio>Elektronický projekt inspirovaný noční Prahou.</shortBio>
+    </performer>
+    <performer id="p51">
+      <name>Sunset Shapes</name>
+      <genre>house</genre>
+      <country>CZ</country>
+      <shortBio>House DJ pro podvečerní slot.</shortBio>
+    </performer>
+    <performer id="p52">
+      <name>Glass Cities</name>
+      <genre>indie-pop</genre>
+      <country>CZ</country>
+      <shortBio>Indie-pop s elektronickými texturami.</shortBio>
+    </performer>
+    <performer id="p53">
+      <name>Slow Rivers</name>
+      <genre>ambient</genre>
+      <country>CZ</country>
+      <shortBio>Ambientní projekt pro chill-out zónu.</shortBio>
+    </performer>
+    <performer id="p54">
+      <name>Night Pulse</name>
+      <genre>techno</genre>
+      <country>CZ</country>
+      <shortBio>Techno DJ se zaměřením na hypnotické sety.</shortBio>
+    </performer>
+    <performer id="p55">
+      <name>Soft Lines</name>
+      <genre>downtempo</genre>
+      <country>CZ</country>
+      <shortBio>Downtempo s živými nástroji.</shortBio>
+    </performer>
+    <performer id="p56">
+      <name>Inner City Choir</name>
+      <genre>choir-experimental</genre>
+      <country>CZ</country>
+      <shortBio>Experimentální sborový projekt.</shortBio>
+    </performer>
+    <performer id="p57">
+      <name>Electric Tides</name>
+      <genre>electro</genre>
+      <country>CZ</country>
+      <shortBio>Electro dvojice s živým bubeníkem.</shortBio>
+    </performer>
+    <performer id="p58">
+      <name>Hidden Voices</name>
+      <genre>spoken-word</genre>
+      <country>CZ</country>
+      <shortBio>Spoken word &amp; ambientní podkres.</shortBio>
+    </performer>
+    <performer id="p59">
+      <name>Metro Echo</name>
+      <genre>indie-rock</genre>
+      <country>CZ</country>
+      <shortBio>Indie-rocková kapela se silnými refrény.</shortBio>
+    </performer>
+    <performer id="p60">
+      <name>Night Windows</name>
+      <genre>electronic</genre>
+      <country>CZ</country>
+      <shortBio>Elektronický projekt uzavírající festival.</shortBio>
+    </performer>
+  </performers>
+
+  <events>
+    <!-- Pátek (d1) – 20 eventů, e1–e20 -->
+    <event id="e1">
+      <title>Festival Opening &amp; Ambient Set</title>
+      <type>concert</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-19T17:00:00</startTime>
+      <endTime>2026-06-19T18:00:00</endTime>
+      <performerRefs>
+        <performerRef>p8</performerRef>
+      </performerRefs>
+      <description>Oficiální otevření festivalu a ambientní úvodní set na River Stage.</description>
+    </event>
+    <event id="e2">
+      <title>Echo Lines Live</title>
+      <type>concert</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-19T18:30:00</startTime>
+      <endTime>2026-06-19T19:30:00</endTime>
+      <performerRefs>
+        <performerRef>p1</performerRef>
+      </performerRefs>
+      <description>Live set projektu Echo Lines.</description>
+    </event>
+    <event id="e3">
+      <title>Midnight Signals</title>
+      <type>concert</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-19T20:00:00</startTime>
+      <endTime>2026-06-19T21:00:00</endTime>
+      <performerRefs>
+        <performerRef>p2</performerRef>
+      </performerRefs>
+      <description>Indie-pop koncert na hlavní stage.</description>
+    </event>
+    <event id="e4">
+      <title>Neon Circuits AV Show</title>
+      <type>concert</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-19T21:30:00</startTime>
+      <endTime>2026-06-19T22:30:00</endTime>
+      <performerRefs>
+        <performerRef>p3</performerRef>
+        <performerRef>p39</performerRef>
+      </performerRefs>
+      <description>Synthwave show s VJ podporou.</description>
+    </event>
+    <event id="e5">
+      <title>Night Transit Closing Set</title>
+      <type>dj-set</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-19T23:00:00</startTime>
+      <endTime>2026-06-20T01:00:00</endTime>
+      <performerRefs>
+        <performerRef>p10</performerRef>
+      </performerRefs>
+      <description>Noční techno set na River Stage.</description>
+    </event>
+    <event id="e6">
+      <title>Urban Echoes Live</title>
+      <type>concert</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-19T19:00:00</startTime>
+      <endTime>2026-06-19T20:00:00</endTime>
+      <performerRefs>
+        <performerRef>p4</performerRef>
+      </performerRefs>
+      <description>Alternativní koncert v Factory Hall.</description>
+    </event>
+    <event id="e7">
+      <title>Soft Glitch Performance</title>
+      <type>concert</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-19T20:30:00</startTime>
+      <endTime>2026-06-19T21:30:00</endTime>
+      <performerRefs>
+        <performerRef>p5</performerRef>
+      </performerRefs>
+      <description>Experimentální set Soft Glitch.</description>
+    </event>
+    <event id="e8">
+      <title>Waveforms Collective Night</title>
+      <type>dj-set</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-19T22:00:00</startTime>
+      <endTime>2026-06-20T01:00:00</endTime>
+      <performerRefs>
+        <performerRef>p6</performerRef>
+      </performerRefs>
+      <description>Deep &amp; dub techno noc v Factory Hall.</description>
+    </event>
+    <event id="e9">
+      <title>Quiet City Session</title>
+      <type>concert</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-19T18:00:00</startTime>
+      <endTime>2026-06-19T19:00:00</endTime>
+      <performerRefs>
+        <performerRef>p11</performerRef>
+      </performerRefs>
+      <description>Intimní downtempo set.</description>
+    </event>
+    <event id="e10">
+      <title>Signal Drift Late Set</title>
+      <type>dj-set</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-19T21:00:00</startTime>
+      <endTime>2026-06-19T22:30:00</endTime>
+      <performerRefs>
+        <performerRef>p12</performerRef>
+      </performerRefs>
+      <description>Drum&amp;bass set v menším prostoru.</description>
+    </event>
+    <event id="e11">
+      <title>Echo Workshop: Sound Design Basics</title>
+      <type>workshop</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-19T10:00:00</startTime>
+      <endTime>2026-06-19T12:00:00</endTime>
+      <performerRefs>
+        <performerRef>p21</performerRef>
+      </performerRefs>
+      <description>Úvod do sound designu pro začátečníky.</description>
+    </event>
+    <event id="e12">
+      <title>Creative Coding Lab: AV Basics</title>
+      <type>workshop</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-19T13:00:00</startTime>
+      <endTime>2026-06-19T15:00:00</endTime>
+      <performerRefs>
+        <performerRef>p22</performerRef>
+      </performerRefs>
+      <description>Workshop o základech audiovizuálního programování.</description>
+    </event>
+    <event id="e13">
+      <title>Music Business Panel</title>
+      <type>talk</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-19T16:00:00</startTime>
+      <endTime>2026-06-19T17:00:00</endTime>
+      <performerRefs>
+        <performerRef>p23</performerRef>
+      </performerRefs>
+      <description>Diskuse o fungování hudebního průmyslu.</description>
+    </event>
+    <event id="e14">
+      <title>Women in Sound Panel</title>
+      <type>talk</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-19T17:15:00</startTime>
+      <endTime>2026-06-19T18:15:00</endTime>
+      <performerRefs>
+        <performerRef>p24</performerRef>
+      </performerRefs>
+      <description>Panel zaměřený na ženy v audio profesích.</description>
+    </event>
+    <event id="e15">
+      <title>Field Recording Walk I</title>
+      <type>workshop</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-19T11:00:00</startTime>
+      <endTime>2026-06-19T13:00:00</endTime>
+      <performerRefs>
+        <performerRef>p25</performerRef>
+      </performerRefs>
+      <description>Procházka s nahráváním městského zvuku.</description>
+    </event>
+    <event id="e16">
+      <title>Live Coding Session</title>
+      <type>performance</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-19T16:00:00</startTime>
+      <endTime>2026-06-19T17:00:00</endTime>
+      <performerRefs>
+        <performerRef>p26</performerRef>
+      </performerRefs>
+      <description>Ukázka live coding performance.</description>
+    </event>
+    <event id="e17">
+      <title>Analog Heaven Workshop</title>
+      <type>workshop</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-19T14:00:00</startTime>
+      <endTime>2026-06-19T16:00:00</endTime>
+      <performerRefs>
+        <performerRef>p27</performerRef>
+      </performerRefs>
+      <description>Praktický workshop s analogovými syntezátory.</description>
+    </event>
+    <event id="e18">
+      <title>Lighting Design Talk</title>
+      <type>talk</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-19T12:00:00</startTime>
+      <endTime>2026-06-19T13:00:00</endTime>
+      <performerRefs>
+        <performerRef>p28</performerRef>
+      </performerRefs>
+      <description>Přednáška o světelném designu.</description>
+    </event>
+    <event id="e19">
+      <title>Festival Production 101</title>
+      <type>talk</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-19T10:30:00</startTime>
+      <endTime>2026-06-19T11:30:00</endTime>
+      <performerRefs>
+        <performerRef>p29</performerRef>
+      </performerRefs>
+      <description>Základy festivalové produkce.</description>
+    </event>
+    <event id="e20">
+      <title>Podcast Live Recording: Day 1</title>
+      <type>talk</type>
+      <dayRef>d1</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-19T19:15:00</startTime>
+      <endTime>2026-06-19T20:15:00</endTime>
+      <performerRefs>
+        <performerRef>p30</performerRef>
+      </performerRefs>
+      <description>Živé nahrávání hudebního podcastu.</description>
+    </event>
+
+    <!-- Sobota (d2) – 20 eventů, e21–e40 -->
+    <event id="e21">
+      <title>Day 2 Opening: Soft Gravity</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-20T17:00:00</startTime>
+      <endTime>2026-06-20T18:00:00</endTime>
+      <performerRefs>
+        <performerRef>p34</performerRef>
+      </performerRefs>
+      <description>Ambientní zahájení druhého dne.</description>
+    </event>
+    <event id="e22">
+      <title>Golden Hours</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-20T18:30:00</startTime>
+      <endTime>2026-06-20T19:30:00</endTime>
+      <performerRefs>
+        <performerRef>p7</performerRef>
+      </performerRefs>
+      <description>Indie-rockový koncert na hlavní stage.</description>
+    </event>
+    <event id="e23">
+      <title>Neon Rivers</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-20T20:00:00</startTime>
+      <endTime>2026-06-20T21:00:00</endTime>
+      <performerRefs>
+        <performerRef>p15</performerRef>
+      </performerRefs>
+      <description>Indie-pop s elektronickými beaty.</description>
+    </event>
+    <event id="e24">
+      <title>Neon Bridges</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-20T21:30:00</startTime>
+      <endTime>2026-06-20T22:30:00</endTime>
+      <performerRefs>
+        <performerRef>p40</performerRef>
+      </performerRefs>
+      <description>Electro-pop na hlavní stage.</description>
+    </event>
+    <event id="e25">
+      <title>Night Pulse Closing</title>
+      <type>dj-set</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-20T23:00:00</startTime>
+      <endTime>2026-06-21T01:00:00</endTime>
+      <performerRefs>
+        <performerRef>p54</performerRef>
+      </performerRefs>
+      <description>Techno closing set druhého dne.</description>
+    </event>
+    <event id="e26">
+      <title>Cloud Atlas</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-20T18:00:00</startTime>
+      <endTime>2026-06-20T19:00:00</endTime>
+      <performerRefs>
+        <performerRef>p14</performerRef>
+      </performerRefs>
+      <description>Post-rockový koncert s projekcemi.</description>
+    </event>
+    <event id="e27">
+      <title>Frameshift Live</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-20T19:30:00</startTime>
+      <endTime>2026-06-20T20:30:00</endTime>
+      <performerRefs>
+        <performerRef>p20</performerRef>
+      </performerRefs>
+      <description>IDM live set.</description>
+    </event>
+    <event id="e28">
+      <title>Outer Shell Techno Night</title>
+      <type>dj-set</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-20T21:00:00</startTime>
+      <endTime>2026-06-21T00:00:00</endTime>
+      <performerRefs>
+        <performerRef>p36</performerRef>
+      </performerRefs>
+      <description>Tvrdší techno noc.</description>
+    </event>
+    <event id="e29">
+      <title>City Lights Ensemble</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-20T16:30:00</startTime>
+      <endTime>2026-06-20T17:30:00</endTime>
+      <performerRefs>
+        <performerRef>p16</performerRef>
+      </performerRefs>
+      <description>Fúze jazzu a elektroniky.</description>
+    </event>
+    <event id="e30">
+      <title>City Noise Experimental Set</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-20T15:00:00</startTime>
+      <endTime>2026-06-20T16:00:00</endTime>
+      <performerRefs>
+        <performerRef>p46</performerRef>
+      </performerRefs>
+      <description>Experimentální noise performance.</description>
+    </event>
+    <event id="e31">
+      <title>Bright Signals</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-20T18:00:00</startTime>
+      <endTime>2026-06-20T19:00:00</endTime>
+      <performerRefs>
+        <performerRef>p31</performerRef>
+      </performerRefs>
+      <description>Indie-popový set v menším prostoru.</description>
+    </event>
+    <event id="e32">
+      <title>Night Bloom</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-20T19:30:00</startTime>
+      <endTime>2026-06-20T20:30:00</endTime>
+      <performerRefs>
+        <performerRef>p32</performerRef>
+      </performerRefs>
+      <description>Dream-pop set.</description>
+    </event>
+    <event id="e33">
+      <title>Soft Focus Lofi Session</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-20T21:00:00</startTime>
+      <endTime>2026-06-20T22:00:00</endTime>
+      <performerRefs>
+        <performerRef>p43</performerRef>
+      </performerRefs>
+      <description>Lofi beats pro pozdní večer.</description>
+    </event>
+    <event id="e34">
+      <title>Inner City Choir</title>
+      <type>concert</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-20T22:30:00</startTime>
+      <endTime>2026-06-20T23:30:00</endTime>
+      <performerRefs>
+        <performerRef>p56</performerRef>
+      </performerRefs>
+      <description>Experimentální sborový projekt.</description>
+    </event>
+    <event id="e35">
+      <title>Creative Coding Advanced</title>
+      <type>workshop</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-20T10:00:00</startTime>
+      <endTime>2026-06-20T12:00:00</endTime>
+      <performerRefs>
+        <performerRef>p22</performerRef>
+      </performerRefs>
+      <description>Pokročilý creative coding workshop.</description>
+    </event>
+    <event id="e36">
+      <title>Field Recording Walk II</title>
+      <type>workshop</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-20T11:00:00</startTime>
+      <endTime>2026-06-20T13:00:00</endTime>
+      <performerRefs>
+        <performerRef>p25</performerRef>
+      </performerRefs>
+      <description>Druhá procházka s nahráváním.</description>
+    </event>
+    <event id="e37">
+      <title>Music Tech Startups Panel</title>
+      <type>talk</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-20T12:00:00</startTime>
+      <endTime>2026-06-20T13:00:00</endTime>
+      <performerRefs>
+        <performerRef>p23</performerRef>
+      </performerRefs>
+      <description>Diskuse o music-tech startupech.</description>
+    </event>
+    <event id="e38">
+      <title>Women in Sound: Mentoring Session</title>
+      <type>talk</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-20T14:00:00</startTime>
+      <endTime>2026-06-20T15:00:00</endTime>
+      <performerRefs>
+        <performerRef>p24</performerRef>
+      </performerRefs>
+      <description>Mentoring pro začínající zvukařky.</description>
+    </event>
+    <event id="e39">
+      <title>Podcast Live: Day 2</title>
+      <type>talk</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-20T15:30:00</startTime>
+      <endTime>2026-06-20T16:30:00</endTime>
+      <performerRefs>
+        <performerRef>p30</performerRef>
+      </performerRefs>
+      <description>Další epizoda živého podcastu.</description>
+    </event>
+    <event id="e40">
+      <title>Lighting Design Lab</title>
+      <type>workshop</type>
+      <dayRef>d2</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-20T10:00:00</startTime>
+      <endTime>2026-06-20T12:00:00</endTime>
+      <performerRefs>
+        <performerRef>p28</performerRef>
+      </performerRefs>
+      <description>Praktický workshop světelného designu.</description>
+    </event>
+
+    <!-- Neděle (d3) – 20 eventů, e41–e60 -->
+    <event id="e41">
+      <title>Day 3 Opening: Slow Rivers</title>
+      <type>concert</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-21T16:30:00</startTime>
+      <endTime>2026-06-21T17:30:00</endTime>
+      <performerRefs>
+        <performerRef>p53</performerRef>
+      </performerRefs>
+      <description>Ambientní zahájení třetího dne.</description>
+    </event>
+    <event id="e42">
+      <title>Crystal Fields</title>
+      <type>concert</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-21T18:00:00</startTime>
+      <endTime>2026-06-21T19:00:00</endTime>
+      <performerRefs>
+        <performerRef>p19</performerRef>
+      </performerRefs>
+      <description>Electro-pop s výrazným vokálem.</description>
+    </event>
+    <event id="e43">
+      <title>Neon Circuits Remix Show</title>
+      <type>concert</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-21T19:30:00</startTime>
+      <endTime>2026-06-21T20:30:00</endTime>
+      <performerRefs>
+        <performerRef>p3</performerRef>
+        <performerRef>p39</performerRef>
+      </performerRefs>
+      <description>Druhá varianta AV show Neon Circuits &amp; VJ Spectrum.</description>
+    </event>
+    <event id="e44">
+      <title>Night Windows Closing Concert</title>
+      <type>concert</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-21T21:00:00</startTime>
+      <endTime>2026-06-21T22:00:00</endTime>
+      <performerRefs>
+        <performerRef>p60</performerRef>
+      </performerRefs>
+      <description>Závěrečný koncert festivalu na River Stage.</description>
+    </event>
+    <event id="e45">
+      <title>Night Drive Synth-pop Show</title>
+      <type>concert</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-21T18:00:00</startTime>
+      <endTime>2026-06-21T19:00:00</endTime>
+      <performerRefs>
+        <performerRef>p45</performerRef>
+      </performerRefs>
+      <description>Synth-pop inspirovaný 80. lety.</description>
+    </event>
+    <event id="e46">
+      <title>Night Figures Live</title>
+      <type>concert</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-21T19:30:00</startTime>
+      <endTime>2026-06-21T20:30:00</endTime>
+      <performerRefs>
+        <performerRef>p49</performerRef>
+      </performerRefs>
+      <description>Energetický indie-rockový koncert.</description>
+    </event>
+    <event id="e47">
+      <title>Outer Shell vs. Night Pulse</title>
+      <type>dj-set</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-21T21:00:00</startTime>
+      <endTime>2026-06-22T00:00:00</endTime>
+      <performerRefs>
+        <performerRef>p36</performerRef>
+        <performerRef>p54</performerRef>
+      </performerRefs>
+      <description>Společný closing DJ set ve Factory Hall.</description>
+    </event>
+    <event id="e48">
+      <title>Electric Tides Live</title>
+      <type>concert</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-21T17:00:00</startTime>
+      <endTime>2026-06-21T18:00:00</endTime>
+      <performerRefs>
+        <performerRef>p57</performerRef>
+      </performerRefs>
+      <description>Electro duo se živým bubeníkem.</description>
+    </event>
+    <event id="e49">
+      <title>Hidden Voices Spoken Word</title>
+      <type>performance</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-21T18:00:00</startTime>
+      <endTime>2026-06-21T19:00:00</endTime>
+      <performerRefs>
+        <performerRef>p58</performerRef>
+      </performerRefs>
+      <description>Spoken word s ambientním doprovodem.</description>
+    </event>
+    <event id="e50">
+      <title>Soft Lines Downtempo Session</title>
+      <type>concert</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-21T19:30:00</startTime>
+      <endTime>2026-06-21T20:30:00</endTime>
+      <performerRefs>
+        <performerRef>p55</performerRef>
+      </performerRefs>
+      <description>Downtempo set pro večerní chill-out.</description>
+    </event>
+    <event id="e51">
+      <title>Glass Cities</title>
+      <type>concert</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-21T21:00:00</startTime>
+      <endTime>2026-06-21T22:00:00</endTime>
+      <performerRefs>
+        <performerRef>p52</performerRef>
+      </performerRefs>
+      <description>Indie-pop s elektronickými texturami.</description>
+    </event>
+    <event id="e52">
+      <title>Field Recording Walk III</title>
+      <type>workshop</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-21T10:00:00</startTime>
+      <endTime>2026-06-21T12:00:00</endTime>
+      <performerRefs>
+        <performerRef>p25</performerRef>
+      </performerRefs>
+      <description>Třetí varianta procházky s nahráváním.</description>
+    </event>
+    <event id="e53">
+      <title>Festival Retrospective Panel</title>
+      <type>talk</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-21T13:00:00</startTime>
+      <endTime>2026-06-21T14:00:00</endTime>
+      <performerRefs>
+        <performerRef>p23</performerRef>
+      </performerRefs>
+      <description>Ohlédnutí za festivalem s organizátory.</description>
+    </event>
+    <event id="e54">
+      <title>Women in Sound: Next Steps</title>
+      <type>talk</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-21T14:15:00</startTime>
+      <endTime>2026-06-21T15:15:00</endTime>
+      <performerRefs>
+        <performerRef>p24</performerRef>
+      </performerRefs>
+      <description>Závěrečná mentoringová session.</description>
+    </event>
+    <event id="e55">
+      <title>Podcast Live: Festival Wrap-up</title>
+      <type>talk</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v3</venueRef>
+      <startTime>2026-06-21T15:30:00</startTime>
+      <endTime>2026-06-21T16:30:00</endTime>
+      <performerRefs>
+        <performerRef>p30</performerRef>
+      </performerRefs>
+      <description>Poslední epizoda podcastu shrnující festival.</description>
+    </event>
+    <event id="e56">
+      <title>Creative Coding Showcase</title>
+      <type>performance</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-21T13:00:00</startTime>
+      <endTime>2026-06-21T14:00:00</endTime>
+      <performerRefs>
+        <performerRef>p22</performerRef>
+      </performerRefs>
+      <description>Prezentace projektů z creative coding workshopů.</description>
+    </event>
+    <event id="e57">
+      <title>Lighting Design: Case Studies</title>
+      <type>talk</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-21T14:30:00</startTime>
+      <endTime>2026-06-21T15:30:00</endTime>
+      <performerRefs>
+        <performerRef>p28</performerRef>
+      </performerRefs>
+      <description>Ukázky světelných konceptů z festivalu.</description>
+    </event>
+    <event id="e58">
+      <title>Festival Production Q&amp;A</title>
+      <type>talk</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-21T16:00:00</startTime>
+      <endTime>2026-06-21T17:00:00</endTime>
+      <performerRefs>
+        <performerRef>p29</performerRef>
+      </performerRefs>
+      <description>Otázky a odpovědi s produkčním týmem.</description>
+    </event>
+    <event id="e59">
+      <title>Open Circuits Jam</title>
+      <type>performance</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v2</venueRef>
+      <startTime>2026-06-21T15:00:00</startTime>
+      <endTime>2026-06-21T16:00:00</endTime>
+      <performerRefs>
+        <performerRef>p47</performerRef>
+      </performerRefs>
+      <description>Otevřený jam live electronics.</description>
+    </event>
+    <event id="e60">
+      <title>Festival Goodbye Gathering</title>
+      <type>other</type>
+      <dayRef>d3</dayRef>
+      <venueRef>v1</venueRef>
+      <startTime>2026-06-21T22:00:00</startTime>
+      <endTime>2026-06-21T22:30:00</endTime>
+      <performerRefs>
+        <performerRef>p1</performerRef>
+      </performerRefs>
+      <description>Krátké rozloučení s festivalem a poděkování návštěvníkům.</description>
+    </event>
+  </events>
+
+</festival>

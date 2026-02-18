@@ -1,0 +1,96 @@
+/* Prague Soundscapes Festival – baseline styly (min 50, max 100 řádků) */
+:root {
+  --bg: #0f0f12;
+  --fg: #e8e6e3;
+  --accent: #c9a227;
+  --accent-dim: #a68520;
+  --muted: #8a8782;
+  --card: #1a1a1f;
+  --radius: 6px;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.6; min-height: 100vh; }
+a { color: var(--accent); }
+a:hover { color: var(--accent-dim); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+img { max-width: 100%; height: auto; display: block; border-radius: var(--radius); overflow: hidden; }
+
+header { background: var(--card); padding: 1rem 1.5rem; border-bottom: 1px solid var(--muted); position: sticky; top: 0; z-index: 10; }
+header h1 { margin: 0; font-size: 1.25rem; letter-spacing: 0.02em; font-weight: 600; }
+nav ul { list-style: none; margin: 0.5rem 0 0; padding: 0; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+nav a { text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+main { max-width: 56rem; margin: 0 auto; padding: 1.5rem 1.25rem; }
+section { margin-bottom: 2.5rem; }
+section h2 { color: var(--accent); margin-top: 0; margin-bottom: 0.75rem; border-bottom: 1px solid var(--muted); padding-bottom: 0.35rem; font-weight: 600; letter-spacing: 0.02em; }
+article { background: var(--card); padding: 1.25rem 1.5rem; margin-bottom: 1rem; border-radius: var(--radius); }
+article h3 { margin-top: 0; margin-bottom: 0.5rem; font-weight: 600; }
+aside { background: var(--card); padding: 1.25rem; margin: 1.5rem 0; border-left: 4px solid var(--accent); font-size: 0.95rem; color: var(--muted); border-radius: 0 var(--radius) var(--radius) 0; }
+aside code { background: var(--bg); padding: 0.15em 0.4em; border-radius: 3px; font-size: 0.9em; }
+time { font-variant-numeric: tabular-nums; color: var(--muted); }
+address { font-style: normal; line-height: 1.5; }
+footer { margin-top: 3rem; padding: 1.5rem 1.5rem; border-top: 1px solid var(--muted); font-size: 0.9rem; color: var(--muted); text-align: center; }
+footer ul { list-style: none; margin: 0.5rem 0 0; padding: 0; display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; }
+footer a:hover { color: var(--fg); }
+
+.hero { position: relative; min-height: 320px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius); margin-bottom: 2rem; overflow: hidden; }
+.hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.hero-overlay { position: relative; z-index: 1; text-align: center; padding: 2.5rem 1.5rem; background: rgba(0, 0, 0, 0.55); color: #fff; width: 100%; }
+.hero-overlay h1 { font-size: 1.75rem; margin: 0 0 0.5rem; letter-spacing: 0.04em; font-weight: 700; color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
+.hero-date { margin: 0.25rem 0; font-size: 1.1rem; color: var(--accent); font-weight: 500; text-shadow: 0 1px 4px rgba(0,0,0,0.6); }
+.hero-tagline { margin: 0.5rem 0 0; font-size: 0.95rem; color: rgba(255,255,255,0.9); text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+ul, ol { margin: 0.5rem 0; padding-left: 1.5rem; }
+li { margin: 0.35rem 0; }
+p { margin: 0.5rem 0; }
+p:first-child { margin-top: 0; }
+p:last-child { margin-bottom: 0; }
+
+.program-day { margin-bottom: 2.5rem; }
+.program-day h2 { font-size: 1.15rem; }
+.event-list { list-style: none; padding-left: 0; margin: 0; }
+.event-list li { margin-bottom: 1rem; padding: 1rem; background: var(--card); border-radius: var(--radius); }
+.event-list article { margin-bottom: 0; padding: 0; background: none; }
+.performer-list { display: grid; gap: 1.25rem; }
+.performer-list article { margin-bottom: 0; }
+.venue-card { padding: 1.25rem; margin-bottom: 1.25rem; background: var(--card); border-radius: var(--radius); border: 1px solid rgba(201, 162, 39, 0.1); }
+.venue-card address { margin-top: 0.5rem; color: var(--muted); font-size: 0.95rem; }
+h1 { font-size: 1.5rem; margin-top: 0; font-weight: 700; letter-spacing: 0.01em; }
+h2 { font-size: 1.25rem; }
+h3 { font-size: 1.1rem; font-weight: 600; }
+strong { font-weight: 600; color: var(--fg); }
+code { font-family: ui-monospace, monospace; font-size: 0.9em; }
+main > section:first-child h1 { margin-bottom: 0.5rem; }
+main > section:first-child p { color: var(--muted); font-size: 0.98rem; }
+.event-list time { font-weight: 500; color: var(--accent); }
+.venue-card h3 { margin-bottom: 0.35rem; }
+.venue-card p { margin: 0.35rem 0; }
+.performer-list article p { margin: 0.35rem 0; font-size: 0.95rem; }
+.performer-list article a { font-size: 0.9rem; }
+nav a[href]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+article a { word-break: break-word; }
+.event-list li article p { margin: 0.25rem 0; }
+.event-list li article h3 { margin-bottom: 0.4rem; }
+.hero + section { margin-top: 0.5rem; }
+section + section { scroll-margin-top: 4rem; }
+footer p { margin: 0; }
+footer a { color: var(--muted); }
+@media (min-width: 40rem) {
+  .performer-list { grid-template-columns: repeat(2, 1fr); }
+  .hero { min-height: 380px; }
+  .hero-overlay h1 { font-size: 2.25rem; }
+}
+@media (min-width: 55rem) {
+  main { padding: 1.5rem 2rem; }
+  .hero { min-height: 420px; }
+  .hero-overlay { padding: 3rem 2rem; }
+  header { padding: 1rem 2rem; }
+  .event-list li { padding: 1.25rem; }
+}
+ol li { padding-left: 0.25rem; }
+.event-list li:last-child { margin-bottom: 0; }
+.venue-card:last-child { margin-bottom: 0; }
+.performer-list article:last-child { margin-bottom: 0; }
+.performer-detail-card { padding: 1.5rem; }
+.performer-detail-card h1 { margin-bottom: 0.75rem; }
