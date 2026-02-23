@@ -1,4 +1,4 @@
-# Prague Soundscapes Festival 2026 — Propozice
+# Prague Soundscapes Festival 2026
 
 ## Stručná identita festivalu
 - **Název:** Prague Soundscapes Festival
