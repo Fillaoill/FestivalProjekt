@@ -1,11 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
-  "required": ["venues"],
+  "required": [
+    "venues"
+  ],
   "properties": {
     "venues": {
       "type": "array",
-      "items": { "$ref": "venue-detail.schema.json" }
+      "items": {
+        "$ref": "venue-detail.schema.json"
+      }
     }
   }
 }

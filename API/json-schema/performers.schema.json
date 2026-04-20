@@ -1,18 +1,28 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
-  "required": ["performers"],
+  "required": [
+    "performers"
+  ],
   "properties": {
     "performers": {
       "type": "array",
-      "items": { "$ref": "performer-detail.schema.json" }
+      "items": {
+        "$ref": "performer-detail.schema.json"
+      }
     },
     "pagination": {
       "type": "object",
       "properties": {
-        "page": { "type": "integer" },
-        "pageSize": { "type": "integer" },
-        "total": { "type": "integer" }
+        "page": {
+          "type": "integer"
+        },
+        "pageSize": {
+          "type": "integer"
+        },
+        "total": {
+          "type": "integer"
+        }
       }
     }
   }
